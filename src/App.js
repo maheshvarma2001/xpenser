@@ -2,6 +2,7 @@ import { Route,BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./pages/home";
 import AddExpense from "./pages/add-expense";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" exact Component={Home}/>
         <Route path="/add-expense" Component={AddExpense}/>
       </Routes>
-      <div>Footer</div>
+      <Footer/>
     </Router>
   );
 }
